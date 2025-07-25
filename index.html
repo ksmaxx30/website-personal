@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Untuk Kamu yang Spesial 💘</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffb6c1, #ffe4e1);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding: 50px;
+      color: #d6336c;
+    }
+    .container {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+    button {
+      background: #ff69b4;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #ff1493;
+    }
+    #response {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #ff1493;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hai Bocilku 💖</h1>
+    <p>Hari ini aku cuma mau bilang sesuatu...</p>
+    <p>Kamu itu luar biasa! 😘</p>
+    <button onclick="showLove()">Aku Sayang Kamu ❤️</button>
+    <div id="response"></div>
+  </div>
+
+  <script>
+    function showLove() {
+      const responses = [
+        "Aku juga sayang kamu lebih dari apapun! 💕",
+        "Peluk dari jauh dulu yaa 🤗",
+        "Kamu tuh alasan aku senyum tiap hari 😍",
+        "Selalu dan selamanya milik kamu 🥰"
+      ];
+      const random = Math.floor(Math.random() * responses.length);
+      document.getElementById("response").textContent = responses[random];
+    }
+  </script>
+</body>
+</html>
